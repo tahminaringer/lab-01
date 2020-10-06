@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  display: inline;
+}
+
+body {
+  width: 480px;
+  background-color: rgb(201, 186, 186);
+  margin: 0px auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body {
+    clear: both;
+    width: 960px;
+    background-color: grey;
+    margin: 0px auto;
+    text-align: center;
+  }
+}
