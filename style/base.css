@@ -2,11 +2,16 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 480px;
+main {
+  display: grid;
+  grid-template-columns: 240px 240px;
+  grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
   background-color: rgb(201, 186, 186);
-  margin: 0px auto;
   text-align: center;
+  align-content: center; 
+  margin: auto;
+  width: 960px;
+  margin-top: 10vh;
 }
 
 span {
@@ -18,13 +23,18 @@ span {
 }
 
 @media (min-width: 768px) {
-  body {
-    clear: both;
-    width: 960px;
-    background-color: grey;
-    margin: 0px auto;
+  main {
+    display: grid;
+    grid-template-columns: 200px 190px 190px 190px 190px;
+    grid-template-rows: 100px 200px 250px 150px;
+    background-color: rgb(201, 186, 186);
     text-align: center;
+    align-content: center;
+    margin: auto;
+    width: 960px;
+    margin-top: 10vh;
   }
+
   span {
     position: absolute;
     top: 50%;
